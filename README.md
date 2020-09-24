@@ -18,7 +18,7 @@ Para más detalles ir a [README.md](https://github.com/oracle/docker-images/blob
 docker run --name ora \
 -p 1521:1521 -p 5500:5500 \
 -e ORACLE_PWD=1234 \
--v /Users/lmml/datos_oracle/DockerVolumes:/opt/oracle/oradata \
+-v /Users/lmml/DockerVolumes:/opt/oracle/oradata \
 oracle/database:18.4.0-xe
 ```
 * **Cambiar el volumen: /Users/lmml/datos_oracle**
