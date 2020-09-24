@@ -8,7 +8,7 @@
 La contrucción de la imagen tarda bastante tiempo ya que primero descarga los binarios de la instalación con las dependencias necesarias y luego contruye la imagen 
 
 ``` sh
-./buildDockerImage.sh -v 19.3.0 -e
+./buildDockerImage.sh -v 18.4.0 -x
 ```
 Solo funciona con la versión 18c XE, para las demás versiones se debe descargar el respectivo binario de la instalación 
 Para más detalles ir a [README.md](https://github.com/oracle/docker-images/blob/master/OracleDatabase/SingleInstance/README.md) del repositorio docker-images
@@ -18,7 +18,7 @@ Para más detalles ir a [README.md](https://github.com/oracle/docker-images/blob
 docker run --name ora \
 -p 1521:1521 -p 5500:5500 \
 -e ORACLE_PWD=1234 \
--v /Users/lmml/datos_oracle:/opt/oracle/oradata \
+-v /Users/lmml/datos_oracle/Docker Volumes:/opt/oracle/oradata \
 oracle/database:18.4.0-xe
 ```
 * **Cambiar el volumen: /Users/lmml/datos_oracle**
