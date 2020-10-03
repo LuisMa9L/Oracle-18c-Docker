@@ -14,12 +14,8 @@ Solo funciona con la versión 18c XE, para las demás versiones se debe descarga
 Para más detalles ir a [README.md](https://github.com/oracle/docker-images/blob/master/OracleDatabase/SingleInstance/README.md) del repositorio docker-images
 * Si hay algún problema probar volver a ejecutar el script
 #### Para crear el contenedor
-``` sh
-docker run --name ora \
--p 1521:1521 -p 5500:5500 \
--e ORACLE_PWD=1234 \
--v /Users/lmml/DockerVolumes:/opt/oracle/oradata \
-oracle/database:18.4.0-xe
+``` py
+print('Hola mundo')
 ```
 * **Cambiar el volumen: /Users/lmml/datos_oracle**
 
